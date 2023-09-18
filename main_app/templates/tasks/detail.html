@@ -43,3 +43,25 @@
     {% endfor %}
 </tbody>
 </table>
+<script>
+  document.addEventListener('DOMContentLoaded' , function() {
+    var elms = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, {
+      format: 'yyyy-mm-dd',
+      defaultDate: newDate(),
+      setDefaultDate: true,
+      autoClose:true
+    });
+  });
+  // const dateEl = document.getElementById('id_date');
+  // // M is Materialize's global variable
+  // M.Datepicker.init(dateEl, {
+  //     format: 'yyyy-mm-dd',
+  //     defaultDate: new Date(),
+  //     setDefaultDate: true,
+  //     autoClose: true
+  // });
+
+  // const selectEl = document.getElementById('id_meal');
+  // M.FormSelect.init(selectEl)
+</script>
