@@ -11,6 +11,7 @@
     <!-- Django requires this for security purposes -->
     <!-- colloquially known as a 'c-surf token' -->
     {% csrf_token %}
+    {{ date_form.as_p }}
     <table>
         <!-- this will map the fields, create inputs, and display them as a table inside the form (all thanks to the CBV) -->
         {{ form.as_table }}

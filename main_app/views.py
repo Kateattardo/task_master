@@ -4,6 +4,7 @@ from .models import Project, Profile, Task, Comment
 #registration imports
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from .forms import ProjectForm, TaskForm
 
 # HOME
 
@@ -82,10 +83,12 @@ def projects_detail(request, proj_id):
   project = Project.objects.get(id=proj_id)
   tasks = Task.objects.filter()
   print('these are my tasks',tasks)
+  Date_form = ProjectForm()
   return render(request, 'projects/detail.html', {
     # include the cat and feeding_form in the context
     'project': project, 
     'tasks': tasks,
+    'date_form' : Date_form
   })
 
 

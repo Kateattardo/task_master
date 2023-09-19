@@ -51,22 +51,22 @@
 </tbody>
 </table>
 <script>
-  // const dateEl = document.getElementById('id_date');
-  // // M is Materialize's global variable
-  // M.Datepicker.init(dateEl, {
-  //     format: 'yyyy-mm-dd',
-  //     defaultDate: new Date(),
-  //     setDefaultDate: true,
-  //     autoClose: true
-  // });
+  const dateEl = document.getElementById('id_due_date');
+  // M is Materialize's global variable
+  M.Datepicker.init(dateEl, {
+      format: 'yyyy-mm-dd',
+      defaultDate: new Date(),
+      setDefaultDate: true,
+      autoClose: true
+  });
 
-  // const selectEl = document.getElementById('id_project');
-  // M.FormSelect.init(selectEl)
+//   const selectEl = document.getElementById('id_project');
+//   M.FormSelect.init(selectEl)
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.datepicker');
-        var instances = M.Datepicker.init(elems, { format: 'yyyy-mm-dd' });
-    });
-</script>
+//     // document.addEventListener('DOMContentLoaded', function() {
+//     //     var elems = document.querySelectorAll('.datepicker');
+//     //     var instances = M.Datepicker.init(elems, { format: 'yyyy-mm-dd' });
+//     // });
+// </script>
 
 {% endblock %}
